@@ -1,5 +1,5 @@
-import { ExecutorContext } from '@nrwl/devkit';
-import { webpackExecutor } from '@nrwl/webpack';
+import { ExecutorContext } from '@nx/devkit';
+import { webpackExecutor } from '@nx/webpack';
 import { BuildExecutorSchema } from './schema';
 
 async function* buildExecutor(

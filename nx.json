@@ -3,9 +3,10 @@
   "npmScope": "nx-issue-example",
   "tasksRunnerOptions": {
     "default": {
-      "runner": "nx/tasks-runners/default",
+      "runner": "nx-cloud",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
+        "accessToken": "OTFmMWQ5MzUtZjE3NC00ZDkwLWI4YzctMTg1MGU0ODhiNGMyfHJlYWQtd3JpdGU="
       }
     }
   },
@@ -36,7 +37,7 @@
     "sharedGlobals": ["{workspaceRoot}/babel.config.json"]
   },
   "generators": {
-    "@nrwl/react": {
+    "@nx/react": {
       "application": {
         "style": "css",
         "linter": "eslint",
